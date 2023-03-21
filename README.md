@@ -1,5 +1,15 @@
 # DIY-Store
 
+## Overview: 
+
+### Perform simple crud operations with a remote server
+
+
+--*Frontend: React JS*
+--*Backend: Django REST Framework*
+--*DB: SQLite(later PostgreSQL*
+--*Host: Docker*
+
 ## Purpose of this project:
   
   *This is a compound project of all technologies studied at SoftUni and it will serve as a final project for the React course*

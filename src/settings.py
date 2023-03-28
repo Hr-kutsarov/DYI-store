@@ -16,10 +16,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080/",
-    "http://localhost:8000/",
-    "http://localhost:3000/",
-    "http://127.0.0.1:3000/",
+    "http://localhost:8080",
+    "http://localhost:8000",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
 ]
 
 
@@ -77,10 +77,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'src.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
     'default': {

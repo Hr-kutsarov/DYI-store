@@ -39,6 +39,7 @@ class Product(models.Model):
     location = models.ForeignKey(Store, on_delete=models.CASCADE)
     section = models.ForeignKey(Section, on_delete=models.CASCADE)
     status = models.CharField(max_length=15, choices=options, default='Unset')
+    is_featured = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title

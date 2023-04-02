@@ -20,10 +20,10 @@ class LoginApiView(auth_views.ObtainAuthToken):
         serializer = self.serializer_class(data=request.data, context={'request': request})
         serializer.is_valid(raise_exception=True)
         user = serializer.validated_data['user']
-        # token, created = Token.objects.get_or_create(user=user)
+        token, created = Token.objects.get_or_create(user=user)
         # print(token.key)
         return Response({
-            # 'token': token.key,
+            'token': token.key,
             'user_id': user.pk,
             'username': user.username,
             }
